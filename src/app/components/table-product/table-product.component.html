@@ -1,0 +1,10 @@
+<p-accordion>
+    <p-accordionTab *ngFor='let price of prices'>
+        <ng-template pTemplate="header">
+            <app-table-header class="w-full" [price]="price"></app-table-header>
+        </ng-template>
+        <ng-template pTemplate="content">
+            <app-table-graph [price]="price"></app-table-graph>
+        </ng-template>
+    </p-accordionTab>
+</p-accordion>

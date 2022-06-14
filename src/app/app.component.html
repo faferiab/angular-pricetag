@@ -1,0 +1,9 @@
+<div class="card">
+  <h1>Pricetag</h1>
+  <div class="grid">
+      <div class="col-9">
+          <app-search-product [products]="listProducts" (selected)="searchProducts($event)"></app-search-product>
+      </div>
+  </div>
+</div>
+<app-table-product [prices]="listPrices"></app-table-product>

@@ -1,0 +1,14 @@
+<div class="grid">
+    <div class="hidden md:block col">{{price.NOM_ART}}</div>
+    <div class="hidden md:block col">precio min: {{price.VAL_MIN | currency }} x Kg</div>
+    <div class="hidden md:block col">precio prom: {{price.PROM_DIARIO | currency }} x Kg</div>
+    <div class="hidden md:block col">precio max: {{price.VAL_MAX | currency }} x Kg</div>
+    <div class="block md:hidden col-3">{{price.NOM_ART}}</div>
+    <div class="block md:hidden col-8 col-offset-1">
+        <p class="m-0">
+            min: {{price.VAL_MIN | currency }} x Kg
+            <br> prom: {{price.PROM_DIARIO | currency }} x Kg
+            <br> max: {{price.VAL_MAX | currency }} x Kg
+        </p>
+    </div>
+</div>
